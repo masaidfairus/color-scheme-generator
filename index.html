@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Color Scheme Generator</title>
+
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <form id="cs-form" class="cs-form">
+                <input class="color-selector" type="color" name="hex" id="color-picker"
+                    placeholder="Color Picker">
+                <select class="mode-selector" name="mode" id="mode-selector"
+                    title="color-scheme-mode">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option
+                        value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option
+                        value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button class="btn" type="submit">Get color scheme</button>
+            </form>
+            <div id="cs-main" class="cs-main">
+                <div class="cs-item">
+                    <div class="cs-hex">#F55A5A</div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-hex">#2B283A</div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-hex">#FBF3AB</div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-hex">#AAD1B6</div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-hex">#A626D3</div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

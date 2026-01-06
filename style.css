@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+
+/* || General Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  border: 1px solid #00000040;
+  border-radius: 6px;
+  width: 600px;
+}
+
+.success {
+  width: 600px;
+  padding: 0.5em;
+  text-align: center;
+  background-color: #28cf285e;
+  border: 1px solid #168116;
+  border-radius: 6px;
+  color: #168116;
+}
+
+main,
+.color-selector,
+.mode-selector,
+.btn {
+  border: 1px solid #00000040;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.btn,
+.color-selector,
+.mode-selector,
+.cs-item {
+    cursor: pointer;
+}
+
+.cs-form {
+  position: sticky;
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px #00000039;
+}
+
+.color-selector {
+  width: 10%;
+  height: 2.85rem;
+}
+
+.mode-selector {
+  display: block;
+  width: 55%;
+  padding: 1em 2em;
+}
+
+.btn {
+  background-color: white;
+  padding: 1.06em 2em;
+}
+
+.cs-main {
+  display: flex;
+  height: 400px;
+}
+
+.cs-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 100%;
+}
+
+.cs-item:nth-child(1) {
+  background-color: #f55a5a;
+}
+
+.cs-item:nth-child(2) {
+  background-color: #2b283a;
+}
+
+.cs-item:nth-child(3) {
+  background-color: #fbf3ab;
+}
+
+.cs-item:nth-child(4) {
+  background-color: #aad1b6;
+}
+
+.cs-item:nth-child(5) {
+  background-color: #a626d3;
+}
+
+.cs-hex {
+  background-color: white;
+  display: flex;
+  height: 3rem;
+  font-size: 0.9rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 425px) {
+  main {
+    width: 350px;
+  }
+
+  .cs-form {
+    padding: 0.8em;
+    gap: 0.5em;
+  }
+
+  .color-selector {
+    width: 20%;
+  }
+
+  .mode-selector {
+    width: 50%;
+  }
+
+  .btn {
+    padding: 0.5em 1em;
+  }
+
+  .cs-hex {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  main {
+    width: 300px;
+  }
+
+  .cs-hex {
+    font-size: 0.6rem;
+  }
+}
