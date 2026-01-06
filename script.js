@@ -2,11 +2,11 @@ const form = document.getElementById("cs-form")
 const mainColorScheme = document.getElementById("cs-main")
 
 mainColorScheme.addEventListener('click', function (e) {
-    if (e.target.className === "cs-item") {
+    if (e.target.className === "cs-item" && e.target.className === "cs-hex") {
         navigator.clipboard.writeText(e.target.innerText)
         document.querySelector('header').innerHTML = `
         <h2 class="success">Copied to your clipboard</h2>`
-        
+
         setTimeout(() => {
             document.querySelector('header').innerHTML = ''
         }, 2000);
